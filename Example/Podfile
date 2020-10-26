@@ -1,6 +1,10 @@
 use_frameworks!
 
 target 'Tesfy_Example' do
+  
+  pod 'MurmurHash-Swift', '1.0.13'
+  pod 'jsonlogic', '1.0.0'
+
   pod 'Tesfy', :path => '../'
 
   target 'Tesfy_Tests' do

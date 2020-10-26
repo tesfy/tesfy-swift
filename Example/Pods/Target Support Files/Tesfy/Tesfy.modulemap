@@ -1,0 +1,6 @@
+framework module Tesfy {
+  umbrella header "Tesfy-umbrella.h"
+
+  export *
+  module * { export * }
+}

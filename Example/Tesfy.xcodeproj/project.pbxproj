@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105975E55ED44C546798A0A0 /* Pods_Tesfy_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F33FF5F2EC15ECFC82C6F7 /* Pods_Tesfy_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8EB7C0FB1D00EFFED8B59C8F /* Pods_Tesfy_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764C4969EAFD83FDDACA8E26 /* Pods_Tesfy_Tests.framework */; };
-		EF6149375A446CCA01D5E9E4 /* Pods_Tesfy_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A256A8EC79E1E03B911EEE /* Pods_Tesfy_Example.framework */; };
+		808410833858CFBF89439E12 /* Pods_Tesfy_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EDDCA8716779386B8BCC19 /* Pods_Tesfy_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10F5DE9E0F8C878A2CC38B45 /* Pods-Tesfy_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Example.release.xcconfig"; path = "Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example.release.xcconfig"; sourceTree = "<group>"; };
+		22DBD55A968A555A9CDB8185 /* Pods-Tesfy_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Example.debug.xcconfig"; path = "Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		28EDDCA8716779386B8BCC19 /* Pods_Tesfy_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesfy_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39F33FF5F2EC15ECFC82C6F7 /* Pods_Tesfy_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesfy_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* Tesfy_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesfy_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,15 +42,11 @@
 		607FACE51AFB9204008FA782 /* Tesfy_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tesfy_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6FC2D1E104E4C122D3D87258 /* Tesfy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Tesfy.podspec; path = ../Tesfy.podspec; sourceTree = "<group>"; };
-		6FCB0D554DD880D6B3436C65 /* Pods-Tesfy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Tests.release.xcconfig"; path = "Target Support Files/Pods-Tesfy_Tests/Pods-Tesfy_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		764C4969EAFD83FDDACA8E26 /* Pods_Tesfy_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesfy_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A91F8ADF25E2E9949EFADD4 /* Pods-Tesfy_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Example.release.xcconfig"; path = "Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B572639941441300B15D5210 /* Pods-Tesfy_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Example.debug.xcconfig"; path = "Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B9A256A8EC79E1E03B911EEE /* Pods_Tesfy_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesfy_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8C27E440EDA8622EF03CF9D /* Pods-Tesfy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tesfy_Tests/Pods-Tesfy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DBDC533FB1659B09270984A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F4F23D9C4F71196C684489D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6FC2D1E104E4C122D3D87258 /* Tesfy.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Tesfy.podspec; path = ../Tesfy.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DBDC533FB1659B09270984A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EEADC8B8922DEE1889F11E55 /* Pods-Tesfy_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Tests.release.xcconfig"; path = "Target Support Files/Pods-Tesfy_Tests/Pods-Tesfy_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F4F23D9C4F71196C684489D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F7E7B5938313D70B522DC0D9 /* Pods-Tesfy_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesfy_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tesfy_Tests/Pods-Tesfy_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6149375A446CCA01D5E9E4 /* Pods_Tesfy_Example.framework in Frameworks */,
+				105975E55ED44C546798A0A0 /* Pods_Tesfy_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB7C0FB1D00EFFED8B59C8F /* Pods_Tesfy_Tests.framework in Frameworks */,
+				808410833858CFBF89439E12 /* Pods_Tesfy_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +72,11 @@
 		5B5958B83E04F66EC80658C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B572639941441300B15D5210 /* Pods-Tesfy_Example.debug.xcconfig */,
-				8A91F8ADF25E2E9949EFADD4 /* Pods-Tesfy_Example.release.xcconfig */,
-				C8C27E440EDA8622EF03CF9D /* Pods-Tesfy_Tests.debug.xcconfig */,
-				6FCB0D554DD880D6B3436C65 /* Pods-Tesfy_Tests.release.xcconfig */,
+				22DBD55A968A555A9CDB8185 /* Pods-Tesfy_Example.debug.xcconfig */,
+				10F5DE9E0F8C878A2CC38B45 /* Pods-Tesfy_Example.release.xcconfig */,
+				F7E7B5938313D70B522DC0D9 /* Pods-Tesfy_Tests.debug.xcconfig */,
+				EEADC8B8922DEE1889F11E55 /* Pods-Tesfy_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,7 +88,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				5B5958B83E04F66EC80658C5 /* Pods */,
-				CB4844A4B85A506CC60712EA /* Frameworks */,
+				ED01A9EF37FEDB0B2643B8CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +150,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		CB4844A4B85A506CC60712EA /* Frameworks */ = {
+		ED01A9EF37FEDB0B2643B8CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9A256A8EC79E1E03B911EEE /* Pods_Tesfy_Example.framework */,
-				764C4969EAFD83FDDACA8E26 /* Pods_Tesfy_Tests.framework */,
+				39F33FF5F2EC15ECFC82C6F7 /* Pods_Tesfy_Example.framework */,
+				28EDDCA8716779386B8BCC19 /* Pods_Tesfy_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Tesfy_Example" */;
 			buildPhases = (
-				27D6DA598E57EE34559FBC5A /* [CP] Check Pods Manifest.lock */,
+				CE93D8D3037FC1F9969557B7 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				46FF6091194559DFEF5CA390 /* [CP] Embed Pods Frameworks */,
+				6F66253E924FBEE9ACE06CA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,11 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Tesfy_Tests" */;
 			buildPhases = (
-				4F8C97A6D554368DD121BB17 /* [CP] Check Pods Manifest.lock */,
+				FA29A54786903C6BD650AD73 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				00AFF1D6B6FA46D331E702CC /* [CP] Embed Pods Frameworks */,
+				65DA4B6291EDB6D51BCD6695 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,7 +263,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00AFF1D6B6FA46D331E702CC /* [CP] Embed Pods Frameworks */ = {
+		65DA4B6291EDB6D51BCD6695 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +283,31 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tesfy_Tests/Pods-Tesfy_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		27D6DA598E57EE34559FBC5A /* [CP] Check Pods Manifest.lock */ = {
+		6F66253E924FBEE9ACE06CA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MurmurHash-Swift/MurmurHash_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Tesfy/Tesfy.framework",
+				"${BUILT_PRODUCTS_DIR}/json-enum/JSON.framework",
+				"${BUILT_PRODUCTS_DIR}/jsonlogic/jsonlogic.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MurmurHash_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tesfy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsonlogic.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE93D8D3037FC1F9969557B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,25 +329,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		46FF6091194559DFEF5CA390 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Tesfy/Tesfy.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tesfy.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tesfy_Example/Pods-Tesfy_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F8C97A6D554368DD121BB17 /* [CP] Check Pods Manifest.lock */ = {
+		FA29A54786903C6BD650AD73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,7 +502,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B572639941441300B15D5210 /* Pods-Tesfy_Example.debug.xcconfig */;
+			baseConfigurationReference = 22DBD55A968A555A9CDB8185 /* Pods-Tesfy_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tesfy/Info.plist;
@@ -511,7 +517,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A91F8ADF25E2E9949EFADD4 /* Pods-Tesfy_Example.release.xcconfig */;
+			baseConfigurationReference = 10F5DE9E0F8C878A2CC38B45 /* Pods-Tesfy_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tesfy/Info.plist;
@@ -526,7 +532,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C27E440EDA8622EF03CF9D /* Pods-Tesfy_Tests.debug.xcconfig */;
+			baseConfigurationReference = F7E7B5938313D70B522DC0D9 /* Pods-Tesfy_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -548,7 +554,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FCB0D554DD880D6B3436C65 /* Pods-Tesfy_Tests.release.xcconfig */;
+			baseConfigurationReference = EEADC8B8922DEE1889F11E55 /* Pods-Tesfy_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

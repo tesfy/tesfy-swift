@@ -1,0 +1,41 @@
+PODS:
+  - json-enum (1.0.0)
+  - jsonlogic (1.0.0):
+    - json-enum (~> 1.0)
+  - MurmurHash-Swift (1.0.13)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - Tesfy (0.1.0):
+    - jsonlogic (= 1.0.0)
+    - MurmurHash-Swift (= 1.0.13)
+
+DEPENDENCIES:
+  - jsonlogic (= 1.0.0)
+  - MurmurHash-Swift (= 1.0.13)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - Tesfy (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - json-enum
+    - jsonlogic
+    - MurmurHash-Swift
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Tesfy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  json-enum: 64e6b6ae91fda4982e6179a8900b7f5d981c47b0
+  jsonlogic: 0cbdcb5790842eaa62b54d453653ed397aa46ecf
+  MurmurHash-Swift: ea96df4ff29458af4e4b74e407992ff77b731ecc
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Tesfy: cb2b709695a48a8985cbb72e0ce4731488762450
+
+PODFILE CHECKSUM: f0db39b6976da50e210b7ffe7e5d1e5d49bfad6e
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,32 @@
+{
+  "name": "Tesfy",
+  "version": "0.1.0",
+  "summary": "A short description of Tesfy.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gringox/Tesfy",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gringox": "pedro.valdivieso@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/gringox/Tesfy.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "swift_versions": "5.3",
+  "source_files": "Tesfy/Classes/**/*",
+  "dependencies": {
+    "MurmurHash-Swift": [
+      "1.0.13"
+    ],
+    "jsonlogic": [
+      "1.0.0"
+    ]
+  },
+  "swift_version": "5.3"
+}
