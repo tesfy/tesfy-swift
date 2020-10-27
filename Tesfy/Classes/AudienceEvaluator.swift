@@ -18,6 +18,7 @@ class AudienceEvaluator {
     
     func evaluate(audience: [String: JSONAny]?, attributes: String?) -> Bool {
         do {
+            guard let _ = attributes else { return false }
             let rule = try self.getStringFromJSONAny(dictionary: audience)
             let result: Bool = try applyRule(rule, to: attributes)
             return result

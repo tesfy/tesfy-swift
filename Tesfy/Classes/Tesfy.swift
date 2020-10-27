@@ -56,16 +56,43 @@ public class Tesfy {
         self.cache[experimentId] = variationId;
     }
     
-    // TODO
-    // Missing features
+    public func isFeatureEnabled(featureId: String, userId: String? = nil, attributes: String? = nil) -> Bool? {
+        let key = self.computeKey(id: featureId, userId: userId)
+        
+        guard let feature = self.config.getFeature(id: featureId) else {
+            return nil
+        }
+        
+        guard let allocation = self.config.getFeatureAllocation(id: featureId) else {
+            return nil
+        }
+        
+        if let audience = feature.audience {
+            if !self.evaluator.evaluate(audience: audience, attributes: attributes ?? self.attributes) {
+                return nil
+            }
+        }
+        
+        guard let _ = self.bucketer.bucket(key: key, allocations: [allocation]) else {
+            return false
+        }
+
+        return true
+    }
+
+    public func getEnabledFeatures(userId: String? = nil, attributes: String? = nil) -> [String: Bool?] {
+        let features = self.config.getFeatures()
+        
+        return features.reduce(into: [:]) { dict, element in
+            dict[element.0] = self.isFeatureEnabled(featureId: element.0, userId: userId, attributes: attributes)
+        }
+    }
     
-    public func getVariationId(experimentId: String, userId: String?, attributes: String?) -> String? {
-        // If forced variation return it
+    public func getVariationId(experimentId: String, userId: String? = nil, attributes: String? = nil) -> String? {
         if let variationId = self.getForcedVariation(experimentId: experimentId) {
             return variationId
         }
         
-        // If variation is in storage return it
         if let variationId = self.storage?.get(id: experimentId) {
             return variationId
         }
@@ -74,8 +101,8 @@ public class Tesfy {
             return nil
         }
         
-        if let audience: [String: JSONAny] = experiment.audience {
-            if (!self.evaluator.evaluate(audience: audience, attributes: attributes ?? self.attributes)) {
+        if let audience = experiment.audience {
+            if !self.evaluator.evaluate(audience: audience, attributes: attributes ?? self.attributes) {
                 return nil
             }
         }
@@ -101,7 +128,7 @@ public class Tesfy {
         return variationId
     }
     
-    public func getVariationIds(userId: String?, attributes: String?) -> [String: String] {
+    public func getVariationIds(userId: String? = nil, attributes: String? = nil) -> [String: String?] {
         let experiments: [String: Experiment] = self.config.getExperiments()
         
         return experiments.reduce(into: [:]) { dict, element in

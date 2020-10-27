@@ -56,11 +56,23 @@ class ViewController: UIViewController {
         
         let tesfy = Tesfy(datafile: datafile)
         
-        let variationId = tesfy.getVariationId(experimentId: "experiment-1", userId: userId, attributes: attributes)
-        print(variationId as Any)
+        let variationId = tesfy.getVariationId(experimentId: "experiment-2", userId: userId, attributes: attributes)
+        print("experiment-1 variationId: \(variationId as Any)")
         
-//        let variationIds = tesfy.getVariationIds(userId: userId, attributes: attributes)
-//        print(variationIds as Any)
+        print("")
+        
+        let variationIds = tesfy.getVariationIds(userId: userId, attributes: attributes)
+        print("variationIds: \(variationIds as Any)")
+        
+        print("")
+        
+        let isFeatureEnabled = tesfy.isFeatureEnabled(featureId: "feature-1", userId: userId, attributes: attributes)
+        print("feature-1 isFeatureEnabled: \(isFeatureEnabled as Any)")
+        
+        print("")
+        
+        let featuresEnabled = tesfy.getEnabledFeatures(userId: userId, attributes: attributes)
+        print("featuresEnabled: \(featuresEnabled as Any)")
     }
 
 }

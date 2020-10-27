@@ -58,30 +58,32 @@ class Config {
         return experiments[id]
     }
 
-//    getFeatures(): { [id: string]: Feature } {
-//        const { features = {} } = this.datafile;
-//        return features;
-//      }
-//
-//      getFeature(id: string): Feature {
-//        const features = this.getFeatures();
-//        return features[id];
-//      }
-//
-//      getFeatureAllocation(id: string): Allocation | undefined {
-//        const feature = this.getFeature(id);
-//
-//        if (!feature) {
-//          return;
-//        }
-//
-//        const rangeEnd = this.computeRangeEnd(feature.percentage);
-//
-//        return { id, rangeEnd };
-//      }
+    func getFeatures() -> [String: Feature] {
+        if let features = self.datafile.features {
+            return features
+        }
+        
+        return [:]
+    }
+
+    func getFeature(id: String) -> Feature? {
+        let features = self.getFeatures();
+        return features[id];
+    }
+
+    func getFeatureAllocation(id: String) -> Allocation? {
+        guard let feature = self.getFeature(id: id) else {
+            return nil
+        }
+
+        let rangeEnd = self.computeRangeEnd(percentage: feature.percentage);
+        
+        let allocation = Allocation(id: id, rangeEnd: rangeEnd)
+
+        return allocation
+    }
     
     func getExperimentAllocation(id: String) -> Allocation? {
-        
         guard let experiment = self.getExperiment(id: id) else {
             return nil
         }
