@@ -7,8 +7,8 @@
 
 public class Tesfy {
     
-    private let TOTAL_BUCKETS = 10000.00
-    private let TRAFFIC_ALLOCATION_SALT = "tas"
+    private static let TOTAL_BUCKETS = 10000.00
+    private static let TRAFFIC_ALLOCATION_SALT = "tas"
     
     private var config: Config
     private var bucketer: Bucketer
@@ -19,8 +19,8 @@ public class Tesfy {
     private var cache: [String:String]
     
     public init(datafile: String, storage: TesfyStorable? = nil, userId: String? = nil, attributes: String? = nil) {
-        self.config = Config(datafile: datafile, maxBuckets: self.TOTAL_BUCKETS)
-        self.bucketer = Bucketer(maxBuckets: self.TOTAL_BUCKETS)
+        self.config = Config(datafile: datafile, maxBuckets: Tesfy.TOTAL_BUCKETS)
+        self.bucketer = Bucketer(maxBuckets: Tesfy.TOTAL_BUCKETS)
         self.evaluator = AudienceEvaluator()
         self.storage = storage
         self.userId = userId
@@ -80,7 +80,7 @@ public class Tesfy {
             }
         }
         
-        var key = self.computeKey(id: experimentId, userId: userId, salt: self.TRAFFIC_ALLOCATION_SALT)
+        var key = self.computeKey(id: experimentId, userId: userId, salt: Tesfy.TRAFFIC_ALLOCATION_SALT)
         guard let allocation = self.config.getExperimentAllocation(id: experimentId) else {
             return nil
         }
