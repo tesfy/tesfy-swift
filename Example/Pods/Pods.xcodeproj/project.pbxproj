@@ -140,7 +140,7 @@
 		EBD2B10B25475EA500006E9B /* AudienceEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B10625475EA500006E9B /* AudienceEvaluator.swift */; };
 		EBD2B10C25475EA500006E9B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B10725475EA500006E9B /* Config.swift */; };
 		EBD2B10D25475EA500006E9B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B10825475EA500006E9B /* Utilities.swift */; };
-		EBD2B1222547695200006E9B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B1212547695200006E9B /* Storage.swift */; };
+		EBD2B13E254DDC8F00006E9B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD2B13D254DDC8F00006E9B /* Storage.swift */; };
 		EDD6F0CB0C4A0FBF470FF1FA37E28FCC /* BeAnInstanceOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE03C19227FA77DFF5C8F9CB31229E6 /* BeAnInstanceOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		EFC160CE0D8BD88499BACB45706186B4 /* Quick-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5178F9BC87642545CE2789982BCDAB /* Quick-dummy.m */; };
 		F0EC1E8DF64700838C1BC79AFEC93A1C /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E683C10708504A1F7E26AF9B265E7 /* World.swift */; };
@@ -403,7 +403,7 @@
 		EBD2B10625475EA500006E9B /* AudienceEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudienceEvaluator.swift; path = Tesfy/Classes/AudienceEvaluator.swift; sourceTree = "<group>"; };
 		EBD2B10725475EA500006E9B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Tesfy/Classes/Config.swift; sourceTree = "<group>"; };
 		EBD2B10825475EA500006E9B /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Tesfy/Classes/Utilities.swift; sourceTree = "<group>"; };
-		EBD2B1212547695200006E9B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		EBD2B13D254DDC8F00006E9B /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Tesfy/Classes/Storage.swift; sourceTree = "<group>"; };
 		EBE31A0D4BE1C05FB481A3106447279D /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
 		EC13B963FC792F7A3277C56F5A00F3A3 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
 		EC27CB0F0BC3550B6D3E933FA51EA1DB /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Match.swift; path = Sources/Nimble/Matchers/Match.swift; sourceTree = "<group>"; };
@@ -515,9 +515,9 @@
 				EBD2B10625475EA500006E9B /* AudienceEvaluator.swift */,
 				EBD2B10525475EA500006E9B /* Bucketer.swift */,
 				EBD2B10725475EA500006E9B /* Config.swift */,
-				EBD2B10425475EA500006E9B /* Tesfy.swift */,
 				EBD2B10825475EA500006E9B /* Utilities.swift */,
-				EBD2B1212547695200006E9B /* Storage.swift */,
+				EBD2B10425475EA500006E9B /* Tesfy.swift */,
+				EBD2B13D254DDC8F00006E9B /* Storage.swift */,
 				9ACF1C2C81323D8EA41323B9F0BF2D92 /* Pod */,
 				837CC60C6D4F2BBE51E4AB19D1D4C9B0 /* Support Files */,
 			);
@@ -1213,7 +1213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD2B10D25475EA500006E9B /* Utilities.swift in Sources */,
-				EBD2B1222547695200006E9B /* Storage.swift in Sources */,
+				EBD2B13E254DDC8F00006E9B /* Storage.swift in Sources */,
 				EBD2B10A25475EA500006E9B /* Bucketer.swift in Sources */,
 				13A1F468761D8A383DC0765BF1628851 /* Tesfy-dummy.m in Sources */,
 				EBD2B10C25475EA500006E9B /* Config.swift in Sources */,
