@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Tesfy'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Tesfy.'
+  s.version          = '1.0.0'
+  s.summary          = 'A lightweight A/B Testing and Feature Flag Swift library focused on performance ⚡️'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Tesfy provides a simple but complete solution to develop A/B Tests and Feature Flags on both server and client side without relying in any storage layer. The main features of this library are:
+
+  - Lightweight and focused on performance
+  - Experiments
+  - Feature Flags
+  - Audience definition using jsonLogic
+  - Traffic Allocation
+  - Sticky Bucketing
+  
                        DESC
 
-  s.homepage         = 'https://github.com/gringox/Tesfy'
+  s.homepage         = 'https://github.com/tesfy/tesfy-swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gringox' => 'pedro.valdivieso@gmail.com' }
-  s.source           = { :git => 'https://github.com/gringox/Tesfy.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tesfy/tesfy-swift', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '14.0'
