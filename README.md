@@ -87,8 +87,8 @@ let tesfy = Tesfy(datafile: datafile)
 Check which variation of an experiment is assigned to a user.
 
 ```swift
-let userId = '676380e0-7793-44d6-9189-eb5868e17a86'
-let experimentId = 'experiment-1'
+let userId = "676380e0-7793-44d6-9189-eb5868e17a86"
+let experimentId = "experiment-1"
 
 tesfy.getVariationId(experimentId: experimentId, userId: userId) // "1"
 ```
@@ -97,8 +97,8 @@ tesfy.getVariationId(experimentId: experimentId, userId: userId) // "1"
 Check if a feature is enabled for a user.
 
 ```swift
-let userId = '676380e0-7793-44d6-9189-eb5868e17a86'
-let featureId = 'feature-1'
+let userId = "676380e0-7793-44d6-9189-eb5868e17a86"
+let featureId = "feature-1"
 
 tesfy.isFeatureEnabled(featureId: featureId, userId: userId) // true
 ```
@@ -107,8 +107,8 @@ tesfy.isFeatureEnabled(featureId: featureId, userId: userId) // true
 Use attributes to target an specific audience.
 
 ```swift
-let userId = '676380e0-7793-44d6-9189-eb5868e17a86'
-let experimentId = 'experiment-2'
+let userId = "676380e0-7793-44d6-9189-eb5868e17a86"
+let experimentId = "experiment-2"
 
 tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"ve\" }") // nil
 tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"us\" }") // "0"
@@ -116,8 +116,11 @@ tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ 
 
 ## Integrations
 
-Tesfy is also available in different frameworks or libraries to provide a better API to use alongside those.
-- [react-tesfy](https://github.com/andresz1/react-tesfy)
+Tesfy is also available in different languages for Android or JavaScript (vanilla and React):
+
+- [Tesfy Kotlin](https://github.com/tesfy/tesfy-kotlin)
+- [Tesfy JavaScript](https://github.com/tesfy/tesfy)
+- [Tesfy React](https://github.com/tesfy/react-tesfy)
 
 ## Feedback
 
