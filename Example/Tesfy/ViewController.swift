@@ -9,6 +9,22 @@
 import UIKit
 import Tesfy
 
+class TesfyStorage: TesfyStorable {
+    var storage: [String: String]
+    
+    init(storage: [String: String]? = [:]) {
+        self.storage = storage ?? [:]
+    }
+    
+    func get(id: String) -> String? {
+        return storage[id]
+    }
+    
+    func store(id: String, value: String?) {
+        self.storage[id] = value
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -54,8 +70,9 @@ class ViewController: UIViewController {
             { "countryCode": "us" }
         """
         
-        let tesfy = Tesfy(datafile: datafile)
-        
+        let tesfyStorage = TesfyStorage()
+        let tesfy = Tesfy(datafile: datafile, storage: tesfyStorage)
+                
         let variationId = tesfy.getVariationId(experimentId: "experiment-2", userId: userId, attributes: attributes)
         print("experiment-1 variationId: \(variationId as Any)")
         

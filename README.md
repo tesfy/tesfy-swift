@@ -7,9 +7,6 @@
 </p>
 
 <div align="center">
-    <a href="https://travis-ci.org/gringox/Tesfy">    
-        <image alt="CI status" src="https://img.shields.io/travis/gringox/Tesfy.svg?style=flat">    
-    </a>
     <a href="https://cocoapods.org/pods/Tesfy">    
         <image alt="Version" src="https://img.shields.io/cocoapods/v/Tesfy.svg?style=flat">    
     </a>
@@ -104,7 +101,7 @@ tesfy.isFeatureEnabled(featureId: featureId, userId: userId) // true
 ```
 
 ### Audiences
-Use attributes to target an specific audience.
+Use attributes to target an specific audience by using [JsonLogic](http://jsonlogic.com/).
 
 ```swift
 let userId = "676380e0-7793-44d6-9189-eb5868e17a86"
@@ -112,6 +109,36 @@ let experimentId = "experiment-2"
 
 tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"ve\" }") // nil
 tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"us\" }") // "0"
+```
+
+### Sticky Bucketing
+Optionally add a storage layer when instantiating tesfy by conforming to the protocol `TesfyStorable`. This layer could be whatever you want (UserDefaults, Keychain, Core Data, SQLite, etc.). This way even allocation or attributes changes in users will stick with the same variation.
+
+```swift
+class TesfyStorage: TesfyStorable {
+    var storage: [String: String]
+    
+    init(storage: [String: String]? = [:]) {
+        self.storage = storage ?? [:]
+    }
+    
+    func get(id: String) -> String? {
+        return storage[id]
+    }
+    
+    func store(id: String, value: String?) {
+        self.storage[id] = value
+    }
+}
+
+let tesfyStorage = TesfyStorage()
+let tesfy = Tesfy(datafile: datafile, storage: tesfyStorage)
+
+let userId = "676380e0-7793-44d6-9189-eb5868e17a86"
+let experimentId = "experiment-2"
+
+tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"us\" }") // "0"
+tesfy.getVariationId(experimentId: experimentId, userId: userId, attributes: "{ \"countryCode\": \"ve\" }") // "0"
 ```
 
 ## Integrations
