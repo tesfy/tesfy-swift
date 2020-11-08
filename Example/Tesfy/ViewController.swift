@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         let tesfyStorage = TesfyStorage()
         let tesfy = Tesfy(datafile: datafile, storage: tesfyStorage)
                 
-        let variationId = tesfy.getVariationId(experimentId: "experiment-2", userId: userId, attributes: attributes)
+        let variationId = tesfy.getVariationId(experimentId: "experiment-1", userId: userId, attributes: attributes)
         print("experiment-1 variationId: \(variationId as Any)")
         
         print("")
